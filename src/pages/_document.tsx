@@ -12,6 +12,8 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+                    {/* eslint-disable-next-line @next/next/no-title-in-document-head */}
+                    <title>RoWifi - The 2nd Gen Roblox-Discord Verification Bot</title>
                 </Head>
                 <body>
                     <Main />
