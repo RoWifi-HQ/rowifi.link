@@ -1,6 +1,13 @@
 import '../../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
+import { MDXProvider } from '@mdx-js/react';
+
+import { Layout } from '../components/Docs';
+
+const components = {
+  wrapper: Layout
+};
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -8,7 +15,9 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>RoWifi - The 2nd Gen Roblox-Discord Verification Bot</title>
       </Head>
-      <Component {...pageProps} />
+      <MDXProvider components={components}>
+        <Component {...pageProps} />
+      </MDXProvider>
     </>
   );
 }
