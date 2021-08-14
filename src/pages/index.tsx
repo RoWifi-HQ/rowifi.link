@@ -10,9 +10,9 @@ import { Footer } from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
-    <div className="flex flex-col font-inter text-white px-1">
+    <div className="flex flex-col font-inter text-white">
       <Header />
-      <main>
+      <main className="px-1">
         <div className="flex flex-col py-20 max-w-4xl mx-auto space-y-5">
           <span className="md:text-8xl text-4xl text-center font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-transparent bg-clip-text">The 2nd Gen</span>
           <span className="md:text-8xl text-4xl text-center font-extrabold">Roblox-Discord</span>
