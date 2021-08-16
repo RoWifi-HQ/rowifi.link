@@ -1,8 +1,8 @@
 module.exports = {
   mode: "jit",
   purge: [
-    "./src/pages/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: "class",
   theme: {
@@ -17,10 +17,27 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: "#fff",
+            h1: {
+              color: "#fff",
+            },
+            h2: {
+              color: "#fff",
+            },
+            a: {
+              textDecoration: "none",
+              color: "#fff",
+            },
+          },
+        },
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

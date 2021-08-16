@@ -3,7 +3,7 @@ import ActiveLink from "../Miscellanous/ActiveLink";
 
 export default function Sidebar() {
     return (
-        <div className="bg-[#212121] w-1/6">
+        <div className="bg-[#212121] xl:w-1/6 lg:w-1/5 md:w-1/4 hidden md:block">
             <div className="py-4 flex flex-col items-center space-y-4">
                 <Link href="/docs" passHref>
                     <ActiveLink className="w-2/3 flex items-center text-gray-300" activeClassName="!text-blue-600">

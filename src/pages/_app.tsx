@@ -2,11 +2,13 @@ import '../../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { MDXProvider } from '@mdx-js/react';
+import Image from 'next/image';
 
 import { Layout } from '../components/Docs';
 
 const components = {
-  wrapper: Layout
+  wrapper: Layout,
+  img: Image,
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
