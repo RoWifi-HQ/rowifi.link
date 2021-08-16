@@ -1,14 +1,13 @@
 import { ClassAttributes, HTMLAttributes } from "react";
-import { Header } from "../Header";
+import { DocsHeader } from "../Header";
+import Sidebar from "./Sidebar";
 
 export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<HTMLElement> & HTMLAttributes<HTMLElement>) {
     return (
         <div className="text-white font-inter flex flex-col min-h-screen relative">
-            <Header />
+            <DocsHeader />
             <div className="flex-1 flex flex-row">
-                <div className="bg-hover-dark w-1/6">
-                    <span>Home</span>
-                </div>
+                <Sidebar />
                 <main {...props} />
             </div>
         </div>
