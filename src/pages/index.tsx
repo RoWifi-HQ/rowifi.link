@@ -90,22 +90,22 @@ const Home: NextPage = () => {
           <div className="flex flex-col items-center max-w-xs space-y-4">
             <ChartPieIcon className="w-10 h-10 text-blue-700" />
             <span className="text-xl font-semibold">Analytics</span>
-            <span className="text-sm text-center md:text-left text-gray-300">View how your Roblox group has been growing & meeting milestones on a beautiful line chart.</span>
+            <span className="text-sm text-center text-gray-300">View how your Roblox group has been growing & meeting milestones on beautiful graphs.</span>
           </div>
           <div className="flex flex-col items-center max-w-xs space-y-4">
             <ShieldCheckIcon className="w-10 h-10 text-blue-700" />
             <span className="text-xl font-semibold">Deny Lists</span>
-            <span className="text-sm text-center md:text-left text-gray-300">Keep your server safe by denying access to access to certain users or certain groups.</span>
+            <span className="text-sm text-center text-gray-300">Keep your server safe by denying access to certain users or certain groups.</span>
           </div>
           <div className="flex flex-col items-center max-w-xs space-y-4">
             <ClipboardListIcon className="w-10 h-10 text-blue-700" />
             <span className="text-xl font-semibold">Event Logger</span>
-            <span className="text-sm text-center md:text-left text-gray-300">Track what & how many events your members have been hosting.</span>
+            <span className="text-sm text-center text-gray-300">Track what & how many events your members have been hosting.</span>
           </div>
           <div className="flex flex-col items-center max-w-xs space-y-4">
             <CloudIcon className="w-10 h-10 text-blue-700" />
             <span className="text-xl font-semibold">Backups</span>
-            <span className="text-sm text-center md:text-left text-gray-300">Create a backup of all your binds & server configuration and restore it in any server you own.</span>
+            <span className="text-sm text-center text-gray-300">Create a backup of all your binds & server configuration and restore it in any server you own.</span>
           </div>
         </section>
       </main>

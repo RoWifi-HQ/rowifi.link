@@ -1,3 +1,10 @@
+const round = (num) =>
+  num
+    .toFixed(7)
+    .replace(/(\.[0-9]+?)0+$/, "$1")
+    .replace(/\.0$/, "");
+const em = (px, base) => `${round(px / base)}em`;
+
 module.exports = {
   mode: "jit",
   purge: [
@@ -31,6 +38,27 @@ module.exports = {
               textDecoration: "none",
               color: "#fff",
             },
+            code: {
+              color: "#fff",
+              backgroundColor: "#282828",
+              borderRadius: "5px",
+              paddingTop: em(1, 6),
+              paddingRight: em(2, 6),
+              paddingBottom: em(1, 6),
+              paddingLeft: em(2, 6),
+            },
+            "code::before": {
+              content: '""',
+            },
+            "code::after": {
+              content: '""',
+            },
+            strong: {
+              color: "#fff",
+            },
+            blockquote: {
+              color: "#fff",
+            },
           },
         },
       },
@@ -39,5 +67,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    // require("tailwindcss-scrollbar"),
+  ],
 };
