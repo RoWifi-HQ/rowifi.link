@@ -29,17 +29,17 @@ module.exports = {
           css: {
             color: "#fff",
             h1: {
-              color: "#fff",
+              color: "#E5E7EB",
             },
             h2: {
-              color: "#fff",
+              color: "#E5E7EB",
             },
             a: {
               textDecoration: "none",
-              color: "#fff",
+              color: "#E5E7EB",
             },
             code: {
-              color: "#fff",
+              color: "#E5E7EB",
               backgroundColor: "#282828",
               borderRadius: "5px",
               paddingTop: em(1, 6),
@@ -54,10 +54,10 @@ module.exports = {
               content: '""',
             },
             strong: {
-              color: "#fff",
+              color: "#E5E7EB",
             },
             blockquote: {
-              color: "#fff",
+              color: "#E5E7EB",
             },
           },
         },

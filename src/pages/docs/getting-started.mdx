@@ -1,8 +1,10 @@
 import { Copyable } from "../../components/Docs";
+import { Disclosure, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from "@heroicons/react/solid";
 
 # Quick Start
 
-This guide will show you everything needed to get started with RoWifi.
+This guide will show you everything needed to get started with RoWifi in an opinionated way.
 
 ## 1. Add the bot to the server
 
@@ -15,7 +17,84 @@ server.
 
 ## 2. Setup the unverified and verified roles
 
-> `Unverified` role is a Discord Role that is given to users who do **NOT** have a linked account with RoWifi. Similarly,
-> `Verified` role is a discord role that is given to users who have a linked account with RoWifi.
+Create two roles named `@Unverified` and `@Verified` respectively. Now to set the unverified role,
+run the command `!settings verification @Unverified`. Similarly, to set the verified role, run the command
+`!settings verified @Verified`.
 
-Create two roles named `@Unverified` and `@Verified` respectively.
+<Disclosure>
+  {({ open }) => (
+    <div className="border-t border-b py-2 border-[#333]">
+      <Disclosure.Button className="flex items-center w-full">
+        <span className="font-semibold">
+          Q. What are the unverified and verified roles?
+        </span>
+        <ChevronDownIcon
+          className={`${open ? "transform rotate-180" : ""} w-7 h-7 ml-auto`}
+        />
+      </Disclosure.Button>
+      <Transition
+        enter="transition duration-200 ease-out"
+        enterFrom="transform opacity-0 -translate-y-6"
+        enterTo="transform opacity-100 translate-y-0"
+        leave="transition duration-200 ease-out"
+        leaveFrom="transform opacity-100 translate-y-0"
+        leaveTo="transform opacity-0 -translate-y-6"
+      >
+        <Disclosure.Panel as="p" className="mt-5">
+          <code>Unverified</code> role is a Discord Role that is given to users
+          who do <b>NOT</b> have a linked account with RoWifi. Similarly,{" "}
+          <code>Verified</code> role is a discord role that is given to users
+          who have a linked account with RoWifi.
+        </Disclosure.Panel>
+      </Transition>
+    </div>
+  )}
+</Disclosure>
+
+## 3. Creating a Groupbind
+
+Now that we've gone through the basic setup, let's create the first bind which will be a [groupbind](/docs/groupbinds). This type
+of bind gives a role to any user present in the group. Let's create one more role, `@Member`. Next, run the slash command
+`/groupbinds new`. Enter the Group Id of your main Roblox group, the template as `N/A`, and add `@Member` in the discord roles argument.
+
+## 4. Creating a Rankbind
+
+Now that everyone in the group will get a name, let's give a role & a nickname to the first rank of the group.
+
+> For the sake of simplicity, let's assume the first rank has an ID of 5 and a name of **Newbie**.
+
+Our goal of this rankbind is to make the user have a nickname of `[Newbie] RobloxUsername` and add a role `@Newbie`. To proceed further,
+create the `@Newbie` role.
+
+To make a rankbind, run the command `rankbinds new`. Enter the Group ID of your main Roblox group, the Rank Id as `5`,
+the template as `[Newbie] {roblox-username}`. Set the [priority](/docs/priority) to 1 and add the `@Newbie` role to the
+discord roles argument.
+
+<Disclosure>
+  {({ open }) => (
+    <div className="border-t border-b py-2 border-[#333]">
+      <Disclosure.Button className="flex items-center w-full">
+        <span className="font-semibold">Q. What is priority?</span>
+        <ChevronDownIcon
+          className={`${open ? "transform rotate-180" : ""} w-7 h-7 ml-auto`}
+        />
+      </Disclosure.Button>
+      <Transition
+        enter="transition duration-200 ease-out"
+        enterFrom="transform opacity-0 -translate-y-6"
+        enterTo="transform opacity-100 translate-y-0"
+        leave="transition duration-200 ease-out"
+        leaveFrom="transform opacity-100 translate-y-0"
+        leaveTo="transform opacity-0 -translate-y-6"
+      >
+        <Disclosure.Panel className="mt-5">
+          It is a number that informs the bot which bind to use for the nickname
+          of a user. The bot will always choose the bind with the highest
+          priority.
+        </Disclosure.Panel>
+      </Transition>
+    </div>
+  )}
+</Disclosure>
+
+Test

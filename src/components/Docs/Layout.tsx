@@ -8,7 +8,7 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
             <DocsHeader />
             <div className="flex-1 flex flex-row">
                 <Sidebar />
-                <div className="px-8 xl:px-48 pt-24 prose prose-lg max-w-none w-full md:w-5/6">
+                <div className="px-8 xl:px-48 pt-24 prose max-w-none w-full md:w-5/6">
                     <main {...props} />
                 </div>
             </div>
