@@ -48,10 +48,12 @@ export default function Header() {
             </Transition.Root>
 
             <div className="container mx-auto flex md:justify-around">
-                <div className="flex items-center">
-                    <Image src="/rowifi.png" alt="RoWifi Logo" height={50} width={50} />
-                    <span className="text-xl ml-2 font-semibold">RoWifi</span>
-                </div>
+                <Link href="/">
+                    <a className="flex items-center">
+                        <Image src="/rowifi.png" alt="RoWifi Logo" height={50} width={50} />
+                        <span className="text-xl ml-2 font-semibold">RoWifi</span>
+                    </a>
+                </Link>
                 <div className="hidden md:flex items-center space-x-8 text-gray-300">
                     <Link href="/#features">
                         <a className="hover:text-link-dark">Features</a>
