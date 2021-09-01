@@ -5,7 +5,7 @@ interface CopyableProps {
 export default function Copyable({ children }: CopyableProps) {
     return (
         <div className="overflow-x-auto bg-hover-dark whitespace-nowrap rounded-md scrollbar relative">
-            <div className="px-3 w-full text-center">
+            <div className="px-3 w-full py-2">
                 {children}
             </div>
         </div>

@@ -1,6 +1,4 @@
-import { Copyable } from "../../components/Docs";
-import { Disclosure, Transition } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { Copyable, FAQ } from "../../components/Docs";
 
 # Quick Start
 
@@ -9,7 +7,9 @@ This guide will show you everything needed to get started with RoWifi in an opin
 ## 1. Add the bot to the server
 
 <Copyable>
-  https://discord.com/oauth2/authorize?client_id=508968886998269962&scope=bot%20applications.commands&permissions=402738240
+  {
+    "https://discord.com/oauth2/authorize?client_id=508968886998269962&scope=bot%20applications.commands&permissions=402738240"
+  }
 </Copyable>
 First step is to add the bot to your server. Open the link above in a new tab, select
 your server and click `Authorize`. The bot should now be visible in your discord
@@ -21,35 +21,12 @@ Create two roles named `@Unverified` and `@Verified` respectively. Now to set th
 run the command `!settings verification @Unverified`. Similarly, to set the verified role, run the command
 `!settings verified @Verified`.
 
-<Disclosure>
-  {({ open }) => (
-    <div className="border-t border-b py-2 border-[#333]">
-      <Disclosure.Button className="flex items-center w-full">
-        <span className="font-semibold">
-          Q. What are the unverified and verified roles?
-        </span>
-        <ChevronDownIcon
-          className={`${open ? "transform rotate-180" : ""} w-7 h-7 ml-auto`}
-        />
-      </Disclosure.Button>
-      <Transition
-        enter="transition duration-200 ease-out"
-        enterFrom="transform opacity-0 -translate-y-6"
-        enterTo="transform opacity-100 translate-y-0"
-        leave="transition duration-200 ease-out"
-        leaveFrom="transform opacity-100 translate-y-0"
-        leaveTo="transform opacity-0 -translate-y-6"
-      >
-        <Disclosure.Panel as="p" className="mt-5">
-          <code>Unverified</code> role is a Discord Role that is given to users
-          who do <b>NOT</b> have a linked account with RoWifi. Similarly,{" "}
-          <code>Verified</code> role is a discord role that is given to users
-          who have a linked account with RoWifi.
-        </Disclosure.Panel>
-      </Transition>
-    </div>
-  )}
-</Disclosure>
+<FAQ question="Q. What are the unverified and verified roles?">
+  <code>Unverified</code> role is a Discord Role that is given to users who do{" "}
+  <b>NOT</b> have a linked account with RoWifi. Similarly, <code>Verified</code>{" "}
+  role is a discord role that is given to users who have a linked account with
+  RoWifi.
+</FAQ>
 
 ## 3. Creating a Groupbind
 
@@ -70,31 +47,9 @@ To make a rankbind, run the command `rankbinds new`. Enter the Group ID of your 
 the template as `[Newbie] {roblox-username}`. Set the [priority](/docs/priority) to 1 and add the `@Newbie` role to the
 discord roles argument.
 
-<Disclosure>
-  {({ open }) => (
-    <div className="border-t border-b py-2 border-[#333]">
-      <Disclosure.Button className="flex items-center w-full">
-        <span className="font-semibold">Q. What is priority?</span>
-        <ChevronDownIcon
-          className={`${open ? "transform rotate-180" : ""} w-7 h-7 ml-auto`}
-        />
-      </Disclosure.Button>
-      <Transition
-        enter="transition duration-200 ease-out"
-        enterFrom="transform opacity-0 -translate-y-6"
-        enterTo="transform opacity-100 translate-y-0"
-        leave="transition duration-200 ease-out"
-        leaveFrom="transform opacity-100 translate-y-0"
-        leaveTo="transform opacity-0 -translate-y-6"
-      >
-        <Disclosure.Panel className="mt-5">
-          It is a number that informs the bot which bind to use for the nickname
-          of a user. The bot will always choose the bind with the highest
-          priority.
-        </Disclosure.Panel>
-      </Transition>
-    </div>
-  )}
-</Disclosure>
+<FAQ question="Q. What is priority?">
+  It is a number that informs the bot which bind to use for the nickname of a
+  user. The bot will always choose the bind with the highest priority.
+</FAQ>
 
 Test
