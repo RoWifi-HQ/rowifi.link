@@ -34,9 +34,15 @@ module.exports = {
             h2: {
               color: "#E5E7EB",
             },
+            h3: {
+              color: "#E5E7EB",
+            },
+            h4: {
+              color: "#E5E7EB",
+            },
             a: {
               textDecoration: "none",
-              color: "#E5E7EB",
+              color: "#3B82F6",
             },
             code: {
               color: "#E5E7EB",
