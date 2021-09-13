@@ -1,6 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
+const gfm = require("remark-gfm");
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
+  options: {
+    remarkPlugins: [gfm],
+  },
 });
 
 module.exports = withMDX({
