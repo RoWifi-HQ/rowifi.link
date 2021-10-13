@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import { MDXProvider } from '@mdx-js/react';
 import NProgress from 'nprogress';
-import Link from 'next/link';
 
 import { Layout } from '../components/Docs';
 
@@ -15,7 +14,6 @@ import '../../styles/nprogress.css';
 const components = {
   wrapper: Layout,
   img: Image,
-  a: Link
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
