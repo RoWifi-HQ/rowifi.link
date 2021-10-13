@@ -4,6 +4,7 @@ import blacklists_name from "../../../public/images/blacklists_name.png";
 import blacklists_group from "../../../public/images/blacklists_group.png";
 import blacklists_custom from "../../../public/images/blacklists_custom.png";
 import blacklists_delete from "../../../public/images/blacklists_delete.png";
+import { FAQ } from "../../components/Docs";
 
 # Blacklists
 
@@ -77,7 +78,7 @@ To view all your blacklists, run the command `/blacklists view`. Here you will a
 
 To delete a single blacklist, run the `/blacklists delete` command.
 
-<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm mb-8">
   <Image
     src={blacklists_delete}
     alt="Blacklists Delete"
@@ -85,3 +86,8 @@ To delete a single blacklist, run the `/blacklists delete` command.
     placeholder="blur"
   />
 </div>
+
+<FAQ question="Q. How do you delete a custom blacklist?">
+  Custom blacklists was unfortunately designed poorly. To delete a custom
+  blacklist, use the `code` argument of the custom blacklist.
+</FAQ>
