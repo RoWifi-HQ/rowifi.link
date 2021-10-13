@@ -14,13 +14,32 @@ It has 2 required arguments.
 ### Blacklisting a Group
 To create a single group blacklist, run the command `/blacklists group`.
 
-It has 2 required arguments.
+It has 2 required arguments:
 
-- **Group Id**: This s is the ID of the Roblox Group.
+- **Group Id**: This s is the Id of the Roblox Group.
 - **Reason**: This is the reason for the blacklist.
+
+### Creating a Custom Blacklist
+To create a custom bind, run the command `/blacklists custom`.
+
+It has 1 required argument:
+
+- **Code**: This is the code of the custom blacklist.
+The code argument uses the same functions and operators as the custombinds. Learn more about them [here](../custombinds.mdx#Writing the Code Argument)
 
 ## Viewing your Blacklists
 To view all your blacklists, run the command `/blacklists view`.  Here you will also find the ID for each blacklist.
 
 ## Deleting a Blacklist
 To delete a single blacklist, run the `/blacklists delete` command.
+
+It has 1 required argument:
+
+- **Id**: This is the Id of the blacklist. It can be seen under the `/blacklists view` command.
+
+## Deleting a Custom Blacklist
+To delete a custom blacklist, run the `/blacklists delete` command.
+
+It has 1 required argument:
+
+- **Code**: This is the code of the custom blacklist.
