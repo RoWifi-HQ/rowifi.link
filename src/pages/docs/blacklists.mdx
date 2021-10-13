@@ -1,0 +1,93 @@
+import Image from "next/image";
+import Link from "next/link";
+import blacklists_name from "../../../public/images/blacklists_name.png";
+import blacklists_group from "../../../public/images/blacklists_group.png";
+import blacklists_custom from "../../../public/images/blacklists_custom.png";
+import blacklists_delete from "../../../public/images/blacklists_delete.png";
+import { FAQ } from "../../components/Docs";
+
+# Blacklists
+
+Blacklists is a module that allows you to blacklist specific users and members of a group from your server.
+
+## Creating a Blacklist
+
+### Blacklisting a User
+
+To create a single user blackist, run the command `/blacklists name`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={blacklists_name}
+    alt="Blacklists Name"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has 2 required arguments.
+
+- **Username**: This is the Roblox Username of the user.
+- **Reason**: This is the reason for the blacklist.
+
+### Blacklisting a Group
+
+To create a single group blacklist, run the command `/blacklists group`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={blacklists_group}
+    alt="Blacklists Group"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has 2 required arguments:
+
+- **Group Id**: This s is the Id of the Roblox Group.
+- **Reason**: This is the reason for the blacklist.
+
+### Creating a Custom Blacklist
+
+To create a custom bind, run the command `/blacklists custom`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={blacklists_custom}
+    alt="Blacklists Custom"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has 1 required argument:
+
+- **Code**: The code that evaluates to `true` or `false` based on the user.
+
+### Writing the Code Argument
+
+The syntax that custom blacklists use is modelled after Lua. It uses the same module as custombinds. Learn more about the code
+argument <Link href="/docs/custombinds#writing-the-code-argument">here</Link>.
+
+## Viewing your Blacklists
+
+To view all your blacklists, run the command `/blacklists view`. Here you will also find the ID for each blacklist.
+
+## Deleting a Blacklist
+
+To delete a single blacklist, run the `/blacklists delete` command.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm mb-8">
+  <Image
+    src={blacklists_delete}
+    alt="Blacklists Delete"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+<FAQ question="Q. How do you delete a custom blacklist?">
+  Custom blacklists were unfortunately designed poorly. To delete a custom
+  blacklist, use the `code` argument of the custom blacklist.
+</FAQ>
