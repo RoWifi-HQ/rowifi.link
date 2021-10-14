@@ -1,0 +1,31 @@
+import settings_log_channel from "../../../public/images/settings_log_channel.png";
+import Image from "next/image";
+
+# Audit Logs
+
+RoWifi generates logs for all commands ran and it can send them in a Discord Text Channel upon configuration.
+
+## Creating a Logs Channel
+
+There are two ways to create a log channel:
+
+### 1. Using the inbuilt way
+
+To use the inbuilt way of creating a log channel, simply create a channel called `#rowifi-logs`.
+
+### 2. Setting via a command
+
+To set a log channel, run the command `/settings log-channel`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_log_channel}
+    alt="Settings Log Channel"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has one required argument.
+
+- **channel**: The Discord Text Channel you want to set as the log channel
