@@ -1,29 +1,43 @@
 # Settings
 
-Settings is a type of module that allows you to interact with the RoWifi settings of your server.
-
-Currently, you can the `blacklist-action`, `command-channel`, `prefix`, `update-on-join`, `verification`, `verified`, `admin`, `trainer`, `bypass`, `nickname-bypass`, `log-channel`, and the `functional` settings in your server
+Settings is a module that allows you to modify the bot configuration in the server.
 
 ## Viewing your current Settings
 
 To view your current settings, run the command `/settings view`.
 
-## Setting your current Blacklist-Action setting
+## Setting the Action on Blacklist
 
-To set your blacklist-action setting, use the `/settings blacklist` command.
+RoWifi can be configured to kick or ban users who meet a certain blacklist. To set this configuration, run the command
+`settings blacklist-action`.
 
-This command accepts an argument called `Option`. Below are the 3 options you can use.
+It has 1 required argument.
 
-| Option | Description |
-|  ---   | ----        |
-| None   | Default     |
-| Kick   | Kicks blacklisted users from your server |
-| Ban    | Bans blacklisted users from your server |
+- **Option**: The action to configure for a blacklist
+  | Type | Description |
+  | ---- | ---------------------------------------- |
+  | None | |
+  | Kick | Kick blacklisted users from your server |
+  | Ban | Ban blacklisted users from your server |
 
---IMAGE here--
+## Setting the Verification Role
+
+This setting can be configured to give a role to users who are not verified with RoWifi. To set this, run the command
+`settings verification`.
+
+It has 1 required argument.
+
+- **role**: The Discord Role to set as the Verifcation Role
+
+## Setting the Verified Role
+
+This setting can be configured to give a role to users who are verified with RoWifi. To set this, run the command
+`settings verified`.
+
+It has 1 required argument.
+
+- **role**: The Discord Role to set as the Verified Role
 
 ## Toggling command usage in a channel
 
-To 
-
-a
+RoWifi allows you to enable or disable command usage in Text Channels.
