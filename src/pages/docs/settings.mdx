@@ -1,3 +1,12 @@
+import Image from "next/image";
+import settings_blacklist_action from "../../../public/images/settings_blacklist_action.png";
+import settings_verification from "../../../public/images/settings_verification.png";
+import settings_verified from "../../../public/images/settings_verified.png";
+import settings_command_disable from "../../../public/images/settings_command_disable.png";
+import settings_command_enable from "../../../public/images/settings_command_enable.png";
+import settings_uoj_enable from "../../../public/images/settings_uoj_enable.png";
+import settings_uoj_disable from "../../../public/images/settings_uoj_disable.png";
+
 # Settings
 
 Settings is a module that allows you to modify the bot configuration in the server.
@@ -20,6 +29,15 @@ It has 1 required argument.
   | Kick | Kick blacklisted users from your server |
   | Ban | Ban blacklisted users from your server |
 
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_blacklist_action}
+    alt="Settings Blacklist Action"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
 ## Setting the Verification Role
 
 This setting can be configured to give a role to users who are not verified with RoWifi. To set this, run the command
@@ -28,6 +46,15 @@ This setting can be configured to give a role to users who are not verified with
 It has 1 required argument.
 
 - **role**: The Discord Role to set as the Verifcation Role
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_verification}
+    alt="Settings Verifcation"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
 
 ## Setting the Verified Role
 
@@ -38,34 +65,73 @@ It has 1 required argument.
 
 - **role**: The Discord Role to set as the Verified Role
 
-## Toggling command usage in a channel
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_verified}
+    alt="Settings Verified"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
 
-RoWifi allows you to enable or disable command usage in Text Channels. To toggle this, run the command `/settings command-channel`.
+## Toggling Command Usage
+
+RoWifi allows you to enable or disable command usage in Text Channels. To configure this, run the
+command `/settings command-channel`.
+
+### Disabling Command Usage in a channel
+
+To disable command usage in a Text Channel, set the option argument to `Disable`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_command_disable}
+    alt="Settings Command Channel Disable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
 
 ### Enabling command usage in a channel
 
-The example below enables commands in the channel where the command was ran.
+To enable command usage in a Text Channel, set the option argument to `Enable`.
 
-example image
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_command_enable}
+    alt="Settings Command Channel Enable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
 
-### Disabling command usage in a channel
+## Updating Users on joining the server
 
-The example below disables commands in the channel where the command was ran.
-
-example image
-
-## Toggling the `Update On Join` setting in the server
-
-RoWifi has a feature that updates a user immediately after they join the Discord server. To toggle this, run the command `/settings update-on-join`.
+RoWifi has a feature to update an user immediately after they join the Discord server. To toggle this,
+run the command `/settings update-on-join`.
 
 ### Enabling the `Update On Join` setting in the server
 
-The example below enables the `Update On Join` setting.
+To update users immediately on joining the server, set the option argument to `Enable`.
 
-example image
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_uoj_enable}
+    alt="Settings Update On Join Enable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
 
 ### Disabling the `Update On Join` setting in the server
 
-The example below disables the `Update On Join` setting.
+To disable updating users immediately on joining the server, set the option argument to `Disable`.
 
-example image
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={settings_uoj_disable}
+    alt="Settings Update On Join Disable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
