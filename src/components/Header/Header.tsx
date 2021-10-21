@@ -62,6 +62,9 @@ export default function Header() {
                     <Link href="/docs">
                         <a className="hover:text-link-dark">Docs</a>
                     </Link>
+                    <Link href="/developers">
+                        <a className="hover:text-link-dark">Developers</a>
+                    </Link>
                     <a className="hover:text-link-dark" href="https://discord.gg/h4BGGyR" target="_blank" rel="noreferrer">Support</a>
                     <button disabled className="bg-button-dark px-4 py-1.5 rounded-xl hover:bg-hover-dark cursor-not-allowed inline-flex items-center">
                         Dashboard

@@ -13,6 +13,16 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col md:flex-row md:ml-auto md:space-x-16 space-y-8 md:space-y-0 text-center md:text-left mt-8 md:mt-0">
                     <div>
+                        <span>Product</span>
+                        <nav className="list-none mt-4 space-y-2">
+                            <li className="text-sm text-gray-300 hover:text-link-dark">Features</li>
+                            <li className="text-sm text-gray-300 hover:text-link-dark">Invite the Bot</li>
+                            <li className="text-sm text-gray-300 hover:text-link-dark">Docs</li>
+                            <li className="text-sm text-gray-300 hover:text-link-dark">Developers</li>
+                            <li className="text-sm text-gray-300 hover:text-link-dark">Premium</li>
+                        </nav>
+                    </div>
+                    <div>
                         <span>Legal</span>
                         <nav className="list-none mt-4 space-y-2">
                             <li className="text-sm text-gray-300 hover:text-link-dark">Privacy Policy</li>
@@ -27,10 +37,13 @@ export default function Footer() {
                                 <a href="https://twitter.com/rowifibot" target="_blank" rel="noreferrer">Twitter</a>
                             </li>
                             <li className="text-sm text-gray-300 hover:text-link-dark">
-                                <a href="https://discord.gg/h4BGGyR" target="_blank" rel="noreferrer">Support Server</a>
+                                <a href="https://discord.gg/h4BGGyR" target="_blank" rel="noreferrer">Discord</a>
                             </li>
                             <li className="text-sm text-gray-300 hover:text-link-dark">
-                                <a href="https://www.patreon.com/rowifi" target="_blank" rel="noreferrer">Premium</a>
+                                <a href="https://www.roblox.com/groups/5581309/RoWifi-HQ#!/about" target="_blank" rel="noreferrer">Roblox</a>
+                            </li>
+                            <li className="text-sm text-gray-300 hover:text-link-dark">
+                                <a href="https://github.com/RoWifi-HQ/" target="_blank" rel="noreferrer">Github</a>
                             </li>
                         </nav>
                     </div>
