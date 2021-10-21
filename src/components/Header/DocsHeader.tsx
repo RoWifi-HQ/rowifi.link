@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowSmRightIcon } from '@heroicons/react/outline';
+import Search from '../Docs/Search';
 
 export default function DocsHeader() {
     return (
@@ -13,6 +14,7 @@ export default function DocsHeader() {
                         <span className="uppercase tracking-widest text-xs ml-3 text-blue-600 bg-blue-600 bg-opacity-40 px-2 py-1 rounded-lg md:block hidden">Docs</span>
                     </a>
                 </Link>
+                <Search />
                 <div className="flex items-center space-x-8 text-gray-300 ml-auto md:ml-0 mr-2 md:mr-0">
                     <button disabled className="bg-button-dark px-4 py-1.5 rounded-xl hover:bg-hover-dark cursor-not-allowed inline-flex items-center">
                         Dashboard
