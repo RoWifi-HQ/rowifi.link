@@ -75,7 +75,7 @@ export default function Search() {
                 type="button"
                 ref={searchButtonRef}
                 onClick={onOpen}
-                className="group leading-6 font-medium flex items-center space-x-3 sm:space-x-4 hover:text-gray-600 transition-colors duration-200 my-2 py-1.5 border-b border-gray-700"
+                className="group leading-6 font-medium md:flex hidden items-center space-x-3 sm:space-x-4 hover:text-gray-600 transition-colors duration-200 my-2 py-1.5 border-b border-gray-700"
             >
                 <svg
                     width="24"
