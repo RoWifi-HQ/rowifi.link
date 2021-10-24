@@ -28,6 +28,9 @@ module.exports = {
         DEFAULT: {
           css: {
             color: "#fff",
+            p: {
+              fontWeight: 300,
+            },
             h1: {
               color: "#E5E7EB",
             },

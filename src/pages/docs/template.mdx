@@ -1,1 +1,30 @@
 # Template
+
+Template is a feature of RoWifi that allows you to compose the nicknames of your Discord server members the way you want.
+Templates are composed of two parts, user-defined strings and RoWifi-reserved keywords. These keywords are what hint RoWifi to
+substitute them for certain values. The reserved keywords are listed below:
+
+| Keyword             | Description                                                     |
+| ------------------- | --------------------------------------------------------------- |
+| `{roblox-username}` | RoWifi will substitute this for the user's Roblox Username.     |
+| `{roblox-id}`       | RoWifi will substitute this for the user's Roblox ID.           |
+| `{discord-id}`      | RoWifi will substitute this for the user's Discord ID.          |
+| `{discord-name}`    | RoWifi will substitute this for the user's Discord Username.    |
+| `{display-name}`    | RoWifi will substitute this for the user's Roblox Display Name. |
+
+There are no restrictions when creating a template. It can be just one reserved keyword or it may even be just one letter! A few
+examples of templates are `[E] {roblox-username}`, `{display-name} | T`, `REDACTED`.
+
+## Use Cases
+
+This section covers the common use cases of templates.
+
+#### 1. Roblox Username with a Prefix
+
+This is the most common use case. For the sake of simplicity, let's assume the prefix is `Prefix`.<br/>
+The template for this would be `Prefix {roblox-username}`.
+
+#### 2. Roblox Username with a Suffix
+
+This is an another common use of templates. For the sake of simplicity, let's assume the suffix is `Suffix`.<br/>
+The template for this would be `{roblox-username} Suffix`.
