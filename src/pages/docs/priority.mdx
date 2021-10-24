@@ -1,1 +1,15 @@
 # Priority
+
+Priority is an unique feature to RoWifi. In essence, it is a number that tells RoWifi which bind to choose for nicknaming
+an user. It is ascending in nature. The template of the bind with the highest priority is used to set an user's nickname.
+
+Consider the following two binds:
+
+1. Groupbind with Group Id `000001`, Template `{discord-name}` and Priority `1`
+2. Rankbind with Group Id `000002`, Rank Id `15`, Template `{roblox-username}` and Priority `5`
+
+Suppose there is an user is a part Group 000001 and ranked 15 in Group 000002. As priority states, the bind with the highest
+priority is selected is selected for nicknaming the said user. Since the priority of the second bind is greater than the
+first bind, the template of the second rankbind will be used and the nickname of the user will be their roblox username.
+
+Priority is global in nature. It applies across all the types of binds: rankbinds, groupbinds, custombinds and assetbinds.
