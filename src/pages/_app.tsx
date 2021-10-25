@@ -3,17 +3,40 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
+import Link from "next/link";
 import { MDXProvider } from '@mdx-js/react';
 import NProgress from 'nprogress';
 
-import { Layout } from '../components/Docs';
+import { Layout as DocsLayout } from '../components/Docs';
+import { Layout as LegalLayout } from '../components/Legal';
 
 import '../../styles/globals.css';
 import '../../styles/nprogress.css';
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+function MasterLayout({ children }) {
+  const router = useRouter();
+  const path = router.pathname.split("/");
+  if (path[1] === "docs") {
+    return (
+      <DocsLayout>{children}</DocsLayout>
+    );
+  } else if (path[1] === "legal") {
+    return (
+      <LegalLayout>{children}</LegalLayout>
+    );
+  } else {
+    return (
+      <main>{children}</main>
+    );
+  }
+}
+
 const components = {
-  wrapper: Layout,
+  wrapper: MasterLayout,
   img: Image,
+  a: Link
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
