@@ -1,1 +1,121 @@
 # Functional Roles
+
+Functional Roles are a feature of RoWifi that allow you to grant certain RoWifi permissions to a subset of users.
+There are four types of Functional Roles: `RoWifi Admin`, `RoWifi Bypass`, `RoWifi Nickname Bypass`, `RoWifi Trainer`.
+
+## RoWifi Admin
+
+This functional role grants the permission to use any RoWifi command to an user. This can be done without granting the user
+the `Administrator` permission on Discord. However, by default, any user with the `Administrator` permission can use all
+RoWifi commands.
+
+There are two ways for creating this functional role:
+
+### 1. Using the inbuilt role
+
+To enable the admin functionality, simply create a Discord role called `RoWifi Admin` and that's it.
+
+### 2. Using a custom role
+
+#### Adding a Custom Admin Role
+
+To add any Discord role as a `RoWifi Admin` role, run the command `settings admin` and select the `option` argument as `Add`.
+
+#### Removing a Custom Admin Role
+
+To remove an existing Discord role as a `RoWifi Admin` role, run the command `settings admin` and select the `option` argument as `Remove`.
+
+#### Setting a list of Admin Roles
+
+To overwrite all existing `RoWifi Admin` roles, run the command `settings admin` and select the `option` argument as `Set`.
+
+#### Viewing a list of Admin Roles
+
+To view all `RoWifi Admin` roles, run the command `settings admin` and select the `option` argument as `View`.
+
+## RoWifi Bypass
+
+This functional role allows them to bypass the `update` command run on them. It also allows them to bypass being updated in
+Auto Detection.
+
+There are two ways for creating this functional role:
+
+### 1. Using the inbuilt role
+
+To enable the bypass functionality, simply create a Discord role called `RoWifi Bypass` and that's it.
+
+### 2. Using a custom role
+
+#### Adding a Custom Bypass Role
+
+To add any Discord role as a `RoWifi Bypass` role, run the command `settings bypass` and select the `option` argument as `Add`.
+
+#### Removing a Custom Bypass Role
+
+To remove an existing Discord role as a `RoWifi Bypass` role, run the command `settings bypass` and select the `option` argument as `Remove`.
+
+#### Setting a list of Bypass Roles
+
+To overwrite all existing `RoWifi Bypass` roles, run the command `settings bypass` and select the `option` argument as `Set`.
+
+#### Viewing a list of Bypass Roles
+
+To view all `RoWifi Bypass` roles, run the command `settings bypass` and select the `option` argument as `View`.
+
+## RoWifi Nickname Bypass
+
+This functional role is a special type of bypass where the user's Discord roles can be updated but not their Nickname. This
+functionality also applies during Auto Detection.
+
+There are two ways for creating this functional role:
+
+### 1. Using the inbuilt role
+
+To enable the bypass functionality, simply create a Discord role called `RoWifi Nickname Bypass` and that's it.
+
+### 2. Using a custom role
+
+#### Adding a Custom Nickname Bypass Role
+
+To add any Discord role as a `RoWifi Nickname Bypass` role, run the command `settings nickname-bypass` and select the `option` argument as `Add`.
+
+#### Removing a Custom Nickname Bypass Role
+
+To remove an existing Discord role as a `RoWifi Nickname Bypass` role, run the command `settings nickname-bypass` and select the `option` argument as `Remove`.
+
+#### Setting a list of Nickname Bypass Roles
+
+To overwrite all existing `RoWifi Nickname Bypass` roles, run the command `settings nickname-bypass` and select the `option` argument as `Set`.
+
+#### Viewing a list of Nickname Bypass Roles
+
+To view all `RoWifi Nickname Bypass` roles, run the command `settings nickname-bypass` and select the `option` argument as `View`.
+
+## RoWifi Trainer
+
+This functional role allows an user to access trainer commands. Currently, trainer commands only include the events subsystem.
+Learn more about events [here](/docs/events).
+
+There are two ways for creating this functional role:
+
+### 1. Using the inbuilt role
+
+To enable the bypass functionality, simply create a Discord role called `RoWifi Trainer` and that's it.
+
+### 2. Using a custom role
+
+#### Adding a Custom Trainer Role
+
+To add any Discord role as a `RoWifi Trainer` role, run the command `settings trainer` and select the `option` argument as `Add`.
+
+#### Removing a Custom Trainer Role
+
+To remove an existing Discord role as a `RoWifi Trainer` role, run the command `settings trainer` and select the `option` argument as `Remove`.
+
+#### Setting a list of Trainer Roles
+
+To overwrite all existing `RoWifi Trainer` roles, run the command `settings trainer` and select the `option` argument as `Set`.
+
+#### Viewing a list of Trainer Roles
+
+To view all `RoWifi Trainer` roles, run the command `settings trainer` and select the `option` argument as `View`.
