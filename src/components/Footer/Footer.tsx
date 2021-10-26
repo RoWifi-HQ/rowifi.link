@@ -15,12 +15,20 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row md:ml-auto md:space-x-16 space-y-8 md:space-y-0 text-center md:text-left mt-8 md:mt-0">
                     <div>
                         <span>Product</span>
-                        <nav className="list-none mt-4 space-y-2">
-                            <li className="text-sm text-gray-300 hover:text-link-dark">Features</li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">Invite the Bot</li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">Docs</li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">Developers</li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">Premium</li>
+                        <nav className="mt-4 space-y-2 flex flex-col">
+                            <Link href="/#features">
+                                <a className="text-sm text-gray-300 hover:text-link-dark">Features</a>
+                            </Link>
+                            <Link href="/invite">
+                                <a className="text-sm text-gray-300 hover:text-link-dark">Invite the Bot</a>
+                            </Link>
+                            <Link href="/docs">
+                                <a className="text-sm text-gray-300 hover:text-link-dark">Docs</a>
+                            </Link>
+                            <Link href="/developers">
+                                <a className="text-sm text-gray-300 hover:text-link-dark">Developers</a>
+                            </Link>
+                            <a href="https://patreon.com/rowifi" target="_blank" rel="noreferrer" className="text-sm text-gray-300 hover:text-link-dark">Premium</a>
                         </nav>
                     </div>
                     <div>
@@ -39,19 +47,19 @@ export default function Footer() {
                     </div>
                     <div>
                         <span>Social</span>
-                        <nav className="list-none mt-4 space-y-2">
-                            <li className="text-sm text-gray-300 hover:text-link-dark">
+                        <nav className="mt-4 space-y-2 flex flex-col">
+                            <div className="text-sm text-gray-300 hover:text-link-dark">
                                 <a href="https://twitter.com/rowifibot" target="_blank" rel="noreferrer">Twitter</a>
-                            </li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">
+                            </div>
+                            <div className="text-sm text-gray-300 hover:text-link-dark">
                                 <a href="https://discord.gg/h4BGGyR" target="_blank" rel="noreferrer">Discord</a>
-                            </li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">
+                            </div>
+                            <div className="text-sm text-gray-300 hover:text-link-dark">
                                 <a href="https://www.roblox.com/groups/5581309/RoWifi-HQ#!/about" target="_blank" rel="noreferrer">Roblox</a>
-                            </li>
-                            <li className="text-sm text-gray-300 hover:text-link-dark">
+                            </div>
+                            <div className="text-sm text-gray-300 hover:text-link-dark">
                                 <a href="https://github.com/RoWifi-HQ/" target="_blank" rel="noreferrer">Github</a>
-                            </li>
+                            </div>
                         </nav>
                     </div>
                 </div>
