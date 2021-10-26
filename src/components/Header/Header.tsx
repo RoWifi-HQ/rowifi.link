@@ -28,7 +28,7 @@ export default function Header() {
                                     <XIcon className="w-6 h-6" />
                                 </button>
                             </div>
-                            <div className="flex flex-col divide-y divide-gray-400 text-center px-2">
+                            <div className="flex flex-col divide-y divide-gray-400 divide-opacity-20 text-center px-2">
                                 <Link href="/#features">
                                     <a className="hover:text-link-dark py-2 text-lg font-semibold" onClick={() => setOpen(false)}>Features</a>
                                 </Link>
@@ -49,7 +49,7 @@ export default function Header() {
 
             <div className="container mx-auto flex md:justify-around">
                 <Link href="/">
-                    <a className="flex items-center">
+                    <a className="flex items-center ml-4 md:ml-0">
                         <Image src="/rowifi.png" alt="RoWifi Logo" height={50} width={50} />
                         <span className="text-xl ml-2 font-semibold">RoWifi</span>
                     </a>
@@ -62,16 +62,13 @@ export default function Header() {
                     <Link href="/docs">
                         <a className="hover:text-link-dark">Docs</a>
                     </Link>
-                    <Link href="/developers">
-                        <a className="hover:text-link-dark">Developers</a>
-                    </Link>
                     <a className="hover:text-link-dark" href="https://discord.gg/h4BGGyR" target="_blank" rel="noreferrer">Support</a>
                     <button disabled className="bg-button-dark px-4 py-1.5 rounded-xl hover:bg-hover-dark cursor-not-allowed inline-flex items-center">
                         Dashboard
                         <ArrowSmRightIcon className="w-5 h-5 ml-1" />
                     </button>
                 </div>
-                <button type="button" className="md:hidden ml-auto" onClick={() => setOpen(true)}>
+                <button type="button" className="md:hidden ml-auto mr-4" onClick={() => setOpen(true)}>
                     <MenuIcon className="h-6 w-6" />
                 </button>
             </div>

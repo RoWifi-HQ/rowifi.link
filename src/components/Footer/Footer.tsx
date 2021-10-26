@@ -25,9 +25,6 @@ export default function Footer() {
                             <Link href="/docs">
                                 <a className="text-sm text-gray-300 hover:text-link-dark">Docs</a>
                             </Link>
-                            <Link href="/developers">
-                                <a className="text-sm text-gray-300 hover:text-link-dark">Developers</a>
-                            </Link>
                             <a href="https://patreon.com/rowifi" target="_blank" rel="noreferrer" className="text-sm text-gray-300 hover:text-link-dark">Premium</a>
                         </nav>
                     </div>

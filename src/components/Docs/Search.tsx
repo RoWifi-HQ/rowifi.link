@@ -23,7 +23,11 @@ function Hit({ hit, children }: HitProps) {
     );
 }
 
-export default function Search() {
+interface SearchProps {
+    className?: string
+}
+
+export default function Search({ className }: SearchProps) {
     const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const searchButtonRef = useRef<HTMLButtonElement>(null);
@@ -67,7 +71,7 @@ export default function Search() {
     }, []);
 
     return (
-        <>
+        <div className={className}>
             <Head>
                 <link rel="preconnect" href={`https://${process.env.NEXT_PUBLIC_APPLICATION_ID}-dsn.algolia.net`} crossOrigin="true" />
             </Head>
@@ -75,7 +79,7 @@ export default function Search() {
                 type="button"
                 ref={searchButtonRef}
                 onClick={onOpen}
-                className="group leading-6 font-medium md:flex hidden items-center space-x-3 sm:space-x-4 hover:text-gray-600 transition-colors duration-200 my-2 py-1.5 border-b border-gray-700"
+                className="group mx-auto bg-[#171717] flex leading-6 font-medium items-center space-x-3 sm:space-x-4 hover:text-gray-600 transition-colors duration-200 py-2 px-8 lg:px-24 rounded-lg my-2 md:my-0"
             >
                 <svg
                     width="24"
@@ -92,7 +96,7 @@ export default function Search() {
                     />
                 </svg>
                 <span>
-                    Quick search<span className="hidden sm:inline"> for anything</span>
+                    Quick search for anything
                 </span>
                 <span
                     style={{ opacity: browserDetected ? '1' : '0' }}
@@ -139,6 +143,6 @@ export default function Search() {
                     />,
                     document.body
                 )}
-        </>
+        </div>
     );
 }

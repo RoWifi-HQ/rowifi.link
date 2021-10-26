@@ -1,13 +1,21 @@
 {
-	"plugins": ["@typescript-eslint"],
-	"extends": [
-		"next",
-		"next/core-web-vitals",
-		"plugin:@typescript-eslint/recommended",
-		"prettier"
-	],
-	"rules": {
-		"@typescript-eslint/explicit-module-boundary-types": "off",
-		"semi": "warn"
-	}
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "semi": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["src/utilities/*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
 }
