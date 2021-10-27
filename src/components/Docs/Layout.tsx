@@ -16,6 +16,17 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
                     <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setOpen}>
                         <Transition.Child
                             as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0"
+                            enterTo="opacity-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100"
+                            leaveTo="opacity-0"
+                        >
+                            <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+                        </Transition.Child>
+                        <Transition.Child
+                            as={Fragment}
                             enter="transition ease-in-out duration-300 transform"
                             enterFrom="-translate-x-full"
                             enterTo="translate-x-0"
@@ -23,8 +34,8 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
                             leaveFrom="translate-x-0"
                             leaveTo="-translate-x-full"
                         >
-                            <div className="w-full bg-dashboard-dark flex flex-col text-white">
-                                <div className="flex items-center">
+                            <div className="w-[75%] bg-dashboard-dark flex flex-col text-white z-10 overflow-y-auto scrollbar-w-2 scrollbar-thumb-rounded-md scrollbar-thumb-button-dark">
+                                <div className="flex items-center mt-2 ml-2">
                                     <Image src="/rowifi.png" alt="RoWifi Logo" height={50} width={50} />
                                     <span className="text-xl ml-2 font-semibold">RoWifi</span>
                                     <button className="py-2 mr-2 ml-auto" onClick={() => setOpen(false)}>
@@ -56,13 +67,13 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
                     </div>
                 </div>
             </header>
-            <div className="w-[28%] xl:w-1/6 lg:w-[7/30] fixed inset-y-0 pt-16 hidden md:block bg-[#212121]">
+            <div className="w-[26%] xl:w-1/6 lg:w-[7/30] fixed inset-y-0 pt-16 hidden md:block bg-[#212121]">
                 <Sidebar />
             </div>
             <div className="bg-dashboard-dark top-16 z-10 fixed w-full flex md:hidden">
                 <Search className="w-full" />
             </div>
-            <div className="prose lg:prose-lg max-w-none w-full md:pl-64 pt-24">
+            <div className="prose lg:prose-lg max-w-none w-full md:pl-64 lg:pl-72 pt-24">
                 <div className="px-8 pb-8 pt-12 xl:px-48">
                     <main {...props} />
                 </div>

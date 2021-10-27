@@ -13,6 +13,17 @@ export default function Header() {
                 <Dialog as="div" className="fixed inset-0 flex z-40 md:hidden" onClose={setOpen}>
                     <Transition.Child
                         as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+                    </Transition.Child>
+                    <Transition.Child
+                        as={Fragment}
                         enter="transition ease-in-out duration-300 transform"
                         enterFrom="-translate-x-full"
                         enterTo="translate-x-0"
@@ -20,15 +31,15 @@ export default function Header() {
                         leaveFrom="translate-x-0"
                         leaveTo="-translate-x-full"
                     >
-                        <div className="w-full bg-dashboard-dark flex flex-col text-white">
-                            <div className="flex items-center">
+                        <div className="w-[75%] bg-dashboard-dark flex flex-col text-white z-10">
+                            <div className="flex items-center mt-2 ml-2">
                                 <Image src="/rowifi.png" alt="RoWifi Logo" height={50} width={50} />
                                 <span className="text-xl ml-2 font-semibold">RoWifi</span>
                                 <button className="py-2 mr-2 ml-auto" onClick={() => setOpen(false)}>
                                     <XIcon className="w-6 h-6" />
                                 </button>
                             </div>
-                            <div className="flex flex-col divide-y divide-gray-400 divide-opacity-20 text-center px-2">
+                            <div className="flex flex-col text-center px-2">
                                 <Link href="/#features">
                                     <a className="hover:text-link-dark py-2 text-lg font-semibold" onClick={() => setOpen(false)}>Features</a>
                                 </Link>

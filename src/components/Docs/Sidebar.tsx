@@ -3,7 +3,7 @@ import ActiveLink from "../Miscellanous/ActiveLink";
 
 export default function Sidebar() {
     return (
-        <div className="min-h-full h-full flex flex-col py-4 items-center space-y-4 overflow-y-auto scrollbar-w-2 scrollbar-thumb-rounded-md scrollbar-thumb-button-dark text-center md:text-left">
+        <div className="min-h-full h-full flex flex-col mt-2 md:mt-0 md:py-4 items-center space-y-4 md:overflow-y-auto md:scrollbar-w-2 md:scrollbar-thumb-rounded-md md:scrollbar-thumb-button-dark text-center md:text-left">
             <Link href="/docs" passHref>
                 <ActiveLink className="w-2/3 flex justify-center md:justify-start items-center text-gray-300 mx-auto" activeClassName="!text-blue-600">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

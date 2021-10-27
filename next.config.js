@@ -11,4 +11,14 @@ const withMDX = require("@next/mdx")({
 module.exports = withMDX({
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+  async redirects() {
+    return [
+      {
+        source: "/invite",
+        destination:
+          "https://discord.com/oauth2/authorize?client_id=508968886998269962&scope=bot%20applications.commands&permissions=402738240",
+        permanent: false,
+      },
+    ];
+  },
 });
