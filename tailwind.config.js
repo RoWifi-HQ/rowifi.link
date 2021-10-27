@@ -33,6 +33,7 @@ module.exports = {
             },
             h1: {
               color: "#E5E7EB",
+              marginBottom: 0,
             },
             h2: {
               color: "#E5E7EB",
@@ -70,6 +71,13 @@ module.exports = {
             },
             th: {
               color: "#E5E7EB",
+            },
+          },
+        },
+        lg: {
+          css: {
+            h1: {
+              marginBottom: 0,
             },
           },
         },
