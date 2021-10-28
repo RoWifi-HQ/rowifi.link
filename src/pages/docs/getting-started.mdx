@@ -32,7 +32,7 @@ run the command `!settings verification @Unverified`. Similarly, to set the veri
 
 Now that we've gone through the basic setup, let's create the first bind which will be a [groupbind](/docs/groupbinds). This type
 of bind gives a role to any user present in the group. Let's create one more role, `@Member`. Next, run the slash command
-`/groupbinds new`. Enter the Group Id of your main Roblox group, the template as `N/A`, and add `@Member` in the discord roles argument.
+`/groupbinds new`. Enter the Group Id of your main Roblox group, the [template](/docs/template) as `N/A`, and add `@Member` in the discord roles argument.
 
 ## 4. Creating a Rankbind
 
@@ -49,7 +49,20 @@ discord roles argument.
 
 <FAQ question="Q. What is priority?">
   It is a number that informs the bot which bind to use for the nickname of a
-  user. The bot will always choose the bind with the highest priority.
+  user. The bot will always choose the bind with the highest priority. Learn
+  more about it [here](/docs/priority).
 </FAQ>
 
-Test
+## 5. Setting a logs channel
+
+It is recommended to set a logs channel so you can keep a track of all RoWifi commands run in a server. To set a log channel,
+simply create a channel named `#rowifi-logs` and that's it.
+
+This concludes the setup guide. Refer to the following pages for more information:
+
+- [Rankbinds](/docs/rankbinds)
+- [Groupbinds](/docs/groupbinds)
+- [Custombinds](/docs/custombinds)
+- [Assetbinds](/docs/assetbinds)
+- [Template](/docs/template)
+- [Priority](/docs/priority)
