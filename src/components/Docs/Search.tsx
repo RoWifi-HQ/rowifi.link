@@ -133,10 +133,11 @@ export default function Search({ className }: SearchProps) {
                             return items.map((item) => {
                                 const a = document.createElement('a');
                                 a.href = item.url;
+                                const hash = a.hash || "";
 
                                 return {
                                     ...item,
-                                    url: `${a.pathname}`,
+                                    url: `${a.pathname}${hash}`,
                                 };
                             });
                         }}

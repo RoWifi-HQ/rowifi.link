@@ -9,7 +9,7 @@ export default function DocsHome() {
             <h1>What is RoWifi?</h1>
             <p>
                 RoWifi is a Roblox-Discord Verification Bot offering a seamless integration between your Roblox group and your Discord server.
-                RoWifi&apos;s powerful bind system lets you quickly sync your Roblox ranks and Discord roles. We use Rust &amp; AWS which allows us to deliver
+                RoWifi&apos;s powerful bind system lets you quickly sync your Roblox ranks and Discord roles. Under the hood, RoWifi uses Rust &amp; AWS to allow it to deliver
                 instant responses for tens of thousands of commands from thousands of servers.
             </p>
             <a
@@ -37,14 +37,29 @@ export default function DocsHome() {
                     </svg>
                 </div>
             </div>
-            <h2>Feature Comparison</h2>
+            <h2>Tiers Comparison</h2>
             <div>
                 <table className="!text-center">
                     <thead>
-                        <th>Feature</th>
-                        <th>Normal</th>
-                        <th>Alpha Tier</th>
-                        <th>Beta Tier</th>
+                        <th className="text-2xl">Feature</th>
+                        <th>
+                            <div className="flex flex-col">
+                                <span className="w-full">Normal</span>
+                                <span className="font-medium text-gray-400">Free to get started</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div className="flex flex-col">
+                                <span>Alpha Tier</span>
+                                <span className="font-medium text-gray-400">$1 per month</span>
+                            </div>
+                        </th>
+                        <th>
+                            <div className="flex flex-col">
+                                <span>Beta Tier</span>
+                                <span className="font-medium text-gray-400">$5 per month</span>
+                            </div>
+                        </th>
                     </thead>
                     <tbody>
                         <tr className="!border-b-0">
@@ -112,6 +127,39 @@ export default function DocsHome() {
                             <td><XIcon className="text-red-600 h-6 w-6 block mx-auto" /></td>
                             <td><XIcon className="text-red-600 h-6 w-6 block mx-auto" /></td>
                             <td><CheckIcon className="text-green-600 h-6 w-6 block mx-auto" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <a
+                                    href="https://discord.com/oauth2/authorize?client_id=508968886998269962&scope=bot%20applications.commands&permissions=402738240"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
+                                >
+                                    Add for free
+                                </a>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.patreon.com/join/rowifi/checkout?rid=4014582"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
+                                >
+                                    Get Alpha
+                                </a>
+                            </td>
+                            <td>
+                                <a
+                                    href="https://www.patreon.com/join/rowifi/checkout?rid=4656839"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
+                                >
+                                    Get Beta
+                                </a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
