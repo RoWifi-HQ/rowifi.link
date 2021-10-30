@@ -30,12 +30,12 @@ export default function DocsHome() {
                 <div className="list-none relative">
                     <li className="before:content-['-'] before:absolute before:left-1 ml-6 text-gray-300">Update <code>twilight-rs</code> to v0.6</li>
                 </div>
-                <div className="text-base text-blue-500 flex items-center">
+                {/* <div className="text-base text-blue-500 flex items-center">
                     Learn more
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mt-0.5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
-                </div>
+                </div> */}
             </div>
             <h2>Tiers Comparison</h2>
             <div>
