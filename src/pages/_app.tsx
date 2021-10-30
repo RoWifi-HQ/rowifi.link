@@ -69,11 +69,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:title" content="RoWifi" />
         <meta property="og:description" content="RoWifi is a Roblox-Discord Verification Bot offering a seamless integration between your Roblox group and your Discord server." />
-        <meta property="og:url" content="https://rowifi.netlify.app" />
-        <meta property="og:image" content="https://rowifi.netlify.app/rowifi_banner.jpg" />
+        <meta property="og:url" content="https://rowifi.link" />
+        <meta property="og:image" content="https://rowifi.link/rowifi_banner.jpg" />
         <link rel="icon" type="image/png" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://rowifi.netlify.app" />
+        <link rel="canonical" href="https://rowifi.link" />
       </Head>
       <MDXProvider components={components}>
         <Component {...pageProps} />
