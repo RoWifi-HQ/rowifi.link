@@ -4,7 +4,6 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from "next/link";
-import Script from "next/script";
 import { MDXProvider } from '@mdx-js/react';
 import NProgress from 'nprogress';
 
@@ -76,7 +75,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="canonical" href="https://rowifi.link" />
       </Head>
-      <Script data-ad-client="ca-pub-1197269638005739" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
       <MDXProvider components={components}>
         <Component {...pageProps} />
       </MDXProvider>
