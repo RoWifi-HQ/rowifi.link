@@ -139,7 +139,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Add <span className="hidden md:block">for free</span>
+                                    Add <span className="hidden md:inline">for free</span>
                                 </a>
                             </td>
                             <td>
@@ -149,7 +149,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Get <span className="hidden md:block">Alpha</span>
+                                    Get <span className="hidden md:inline">Alpha</span>
                                 </a>
                             </td>
                             <td>
@@ -159,7 +159,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Get <span className="hidden md:block">Beta</span>
+                                    Get <span className="hidden md:inline">Beta</span>
                                 </a>
                             </td>
                         </tr>
