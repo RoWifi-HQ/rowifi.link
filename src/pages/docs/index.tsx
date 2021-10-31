@@ -41,25 +41,27 @@ export default function DocsHome() {
             <div>
                 <table className="!text-center">
                     <thead>
-                        <th className="text-2xl">Feature</th>
-                        <th>
-                            <div className="flex flex-col">
-                                <span className="w-full">Normal</span>
-                                <span className="font-medium text-gray-400">Free to get started</span>
-                            </div>
-                        </th>
-                        <th>
-                            <div className="flex flex-col">
-                                <span>Alpha Tier</span>
-                                <span className="font-medium text-gray-400">$1 per month</span>
-                            </div>
-                        </th>
-                        <th>
-                            <div className="flex flex-col">
-                                <span>Beta Tier</span>
-                                <span className="font-medium text-gray-400">$5 per month</span>
-                            </div>
-                        </th>
+                        <tr>
+                            <th className="text-2xl">Feature</th>
+                            <th>
+                                <div className="flex flex-col">
+                                    <span className="w-full">Normal</span>
+                                    <span className="font-medium text-gray-400">Free to get started</span>
+                                </div>
+                            </th>
+                            <th>
+                                <div className="flex flex-col">
+                                    <span>Alpha Tier</span>
+                                    <span className="font-medium text-gray-400">$1 per month</span>
+                                </div>
+                            </th>
+                            <th>
+                                <div className="flex flex-col">
+                                    <span>Beta Tier</span>
+                                    <span className="font-medium text-gray-400">$5 per month</span>
+                                </div>
+                            </th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr className="!border-b-0">
@@ -137,7 +139,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Add for free
+                                    Add <span className="hidden md:block">for free</span>
                                 </a>
                             </td>
                             <td>
@@ -147,7 +149,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Get Alpha
+                                    Get <span className="hidden md:block">Alpha</span>
                                 </a>
                             </td>
                             <td>
@@ -157,7 +159,7 @@ export default function DocsHome() {
                                     rel="noreferrer"
                                     className="!text-gray-200 bg-blue-600 px-4 mx-auto py-2 rounded-lg"
                                 >
-                                    Get Beta
+                                    Get <span className="hidden md:block">Beta</span>
                                 </a>
                             </td>
                         </tr>
