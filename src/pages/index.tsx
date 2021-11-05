@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             <div className="py-24 flex md:flex-row flex-col w-full text-center md:text-left justify-evenly">
               <div className="my-auto flex flex-col max-w-md mx-auto md:mx-0">
                 <span className="text-2xl font-bold">Highly Customizable Bind System</span>
-                <span className="mt-4 text-gray-300 leading-tight">Create integrations between Roblox groups & Discord servers with our powerful bind engine. You can even our Lua-like language to mix and match different bind types.</span>
+                <span className="mt-4 text-gray-300 leading-tight">Create integrations between Roblox groups & Discord servers with our powerful bind engine. You can even use our Lua-like language to mix and match different bind types.</span>
               </div>
               <div>
                 <Image src="/rowifi.png" alt="RoWifi Logo" width={300} height={300} />
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             <div className="py-24 flex flex-col w-full text-center md:text-left justify-evenly md:flex-row-reverse">
               <div className="my-auto flex flex-col max-w-md mx-auto md:mx-0">
                 <span className="text-2xl font-bold">Link Multiple Accounts</span>
-                <span className="mt-4 text-gray-300 leading-tight">Switch seamlessly between any Roblox accounts you own. No need to worry about having only one account across all Discord you are a part of.</span>
+                <span className="mt-4 text-gray-300 leading-tight">Switch seamlessly between any Roblox accounts you own. No need to worry about having only one account across all Discord servers you are a part of.</span>
               </div>
               <div>
                 <Image src="/rowifi.png" alt="RoWifi Logo" width={300} height={300} />
