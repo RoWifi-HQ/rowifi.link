@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from "next/link";
+import Script from "next/script";
 import { MDXProvider } from '@mdx-js/react';
 import NProgress from 'nprogress';
 
@@ -75,6 +76,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="canonical" href="https://rowifi.link" />
       </Head>
+      <Script src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b85b40cda50b4ec593611adfdef125c2"}' />
       <MDXProvider components={components}>
         <Component {...pageProps} />
       </MDXProvider>
