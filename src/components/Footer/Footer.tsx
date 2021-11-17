@@ -34,12 +34,8 @@ export default function Footer() {
                             <Link href="/legal/terms-of-service">
                                 <a className="text-sm text-gray-300 hover:text-link-dark">Terms of Service</a>
                             </Link>
-                            <Link href="/legal/privacy-policy">
-                                <a className="text-sm text-gray-300 hover:text-link-dark">Privacy Policy</a>
-                            </Link>
-                            <Link href="/legal/cookie-policy">
-                                <a className="text-sm text-gray-300 hover:text-link-dark">Cookie Policy</a>
-                            </Link>
+                            <a href="https://www.iubenda.com/privacy-policy/39859431/full-legal" className="text-sm text-gray-300 hover:text-link-dark">Privacy Policy</a>
+                            <a href="https://www.iubenda.com/privacy-policy/39859431/cookie-policy" className="text-sm text-gray-300 hover:text-link-dark">Cookie Policy</a>
                         </nav>
                     </div>
                     <div>
