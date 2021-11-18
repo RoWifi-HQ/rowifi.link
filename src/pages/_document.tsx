@@ -13,7 +13,17 @@ class MyDocument extends Document {
                 <Head>
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
-                    <script data-ad-client="ca-pub-1197269638005739" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" />
+                    <script
+                        dangerouslySetInnerHTML={{
+                            __html: `
+                                (adsbygoogle = window.adsbygoogle || []).push({
+                                    google_ad_client: "ca-pub-1197269638005739",
+                                    enable_page_level_ads: true
+                                });
+                                    `
+                        }}
+                    />
                 </Head>
                 <body>
                     <Main />
