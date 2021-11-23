@@ -19,6 +19,11 @@ module.exports = withMDX({
           "https://discord.com/oauth2/authorize?client_id=508968886998269962&scope=bot%20applications.commands&permissions=402738240",
         permanent: false,
       },
+      {
+        source: "/support",
+        destination: "https://discord.gg/h4BGGyR",
+        permanent: true,
+      }
     ];
   },
 });
