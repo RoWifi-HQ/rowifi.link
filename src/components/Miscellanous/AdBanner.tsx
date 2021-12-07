@@ -12,11 +12,10 @@ export default function AdBanner() {
     }, []);
 
     return (
-        <ins className="adsbygoogle"
+        <ins className="adsbygoogle container"
             style={{ display: "block" }}
             data-ad-client="ca-pub-1197269638005739"
             data-ad-slot="7242297329"
-            data-ad-format="auto"
-            data-full-width-responsive="true" />
+            data-ad-format="auto" />
     );
 }
