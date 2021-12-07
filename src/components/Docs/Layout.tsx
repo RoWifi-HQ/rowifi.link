@@ -5,6 +5,7 @@ import { Dialog, Transition } from '@headlessui/react';
 import Search from "./Search";
 import Sidebar from "./Sidebar";
 import { ArrowSmRightIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import AdBanner from "../Miscellanous/AdBanner";
 
 export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<HTMLElement> & HTMLAttributes<HTMLElement>) {
     const [open, setOpen] = useState(false);
@@ -74,6 +75,7 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
                 <Search className="w-full" />
             </div>
             <div className="prose lg:prose-lg max-w-none w-full md:pl-64 lg:pl-72 pt-24">
+                <AdBanner />
                 <div className="px-8 pb-8 pt-12 xl:px-48">
                     <main {...props} />
                 </div>
