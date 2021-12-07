@@ -1,13 +1,5 @@
 import { useEffect } from "react";
 
-const style = {
-    display: "block",
-    height: "128px",
-    "@media (min-width: 1024px)": {
-        width: "1024px",
-    }
-};
-
 export default function AdBanner() {
     useEffect(() => {
         try {
@@ -20,8 +12,7 @@ export default function AdBanner() {
     }, []);
 
     return (
-        <ins className="adsbygoogle"
-            style={style}
+        <ins className="adsbygoogle !h-32 container block"
             data-ad-client="ca-pub-1197269638005739"
             data-ad-slot="7242297329"
             data-ad-format="auto" />
