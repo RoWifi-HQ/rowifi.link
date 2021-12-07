@@ -74,7 +74,7 @@ export default function Layout(props: JSX.IntrinsicAttributes & ClassAttributes<
             <div className="bg-dashboard-dark top-16 z-10 fixed w-full flex md:hidden">
                 <Search className="w-full" />
             </div>
-            <div className="prose lg:prose-lg max-w-none w-full md:pl-64 lg:pl-72 pt-24">
+            <div className="prose lg:prose-lg max-w-none w-full md:pl-64 lg:pl-72 pt-36 md:pt-24">
                 <AdBanner />
                 <div className="px-8 pb-8 pt-12 xl:px-48">
                     <main {...props} />
