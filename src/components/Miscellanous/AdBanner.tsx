@@ -12,9 +12,11 @@ export default function AdBanner() {
     }, []);
 
     return (
-        <ins className="adsbygoogle !h-32 container block mx-auto"
-            data-ad-client="ca-pub-1197269638005739"
-            data-ad-slot="7242297329"
-            data-ad-format="auto" />
+        <div className="text-center">
+            <ins className="adsbygoogle !h-32 container block mx-auto text"
+                data-ad-client="ca-pub-1197269638005739"
+                data-ad-slot="7242297329"
+                data-ad-format="auto" />
+        </div>
     );
 }
