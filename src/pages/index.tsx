@@ -7,6 +7,7 @@ import { ChartPieIcon, ShieldCheckIcon, ClipboardListIcon, CloudIcon } from '@he
 import { Header } from '../components/Header';
 import { FadeIn } from '../components/Miscellanous';
 import { Footer } from '../components/Footer';
+import AdBanner from '../components/Miscellanous/AdBanner';
 
 const Home: NextPage = () => {
   return (
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
             </Link>
           </div>
         </div>
-
+        <AdBanner />
         <section className="flex flex-col">
           <span id="features" className="mx-auto md:text-6xl text-3xl">Features</span>
           <FadeIn>

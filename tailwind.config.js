@@ -6,12 +6,7 @@ const round = (num) =>
 const em = (px, base) => `${round(px / base)}em`;
 
 module.exports = {
-  mode: "jit",
-  purge: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  darkMode: "class",
+  content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
       colors: {
@@ -87,8 +82,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("./src/utilities/scrollbar"),
-  ],
+  plugins: [require("@tailwindcss/typography"), require("./src/utilities/scrollbar")],
 };
