@@ -23,6 +23,11 @@ module.exports = withMDX({
         source: "/support",
         destination: "https://discord.gg/h4BGGyR",
         permanent: true,
+      },
+      {
+        source: "/blog/setup",
+        destination: "/docs/getting-started",
+        permanent: false,
       }
     ];
   },
