@@ -1,0 +1,81 @@
+import { Copyable } from "../../components/Docs";
+import verifySetup from "../../../public/images/verify_setup.png";
+import verifyAdd from "../../../public/images/verify_add.png";
+import verifyDefault from "../../../public/images/verify_default.png";
+import verifySwitch from "../../../public/images/verify_switch.png";
+import verifyDelete from "../../../public/images/verify_delete.png";
+import Image from "remix-image";
+
+# Verification
+
+## Linking your account for the first time
+
+To link your Roblox account to your Discord account, run the following command. The bot will then reply with a button
+linking to a game place. Join the game and the Verification process is now complete. After this you can run the `/update` command.
+
+<div className="bg-gradient-to-r from-green-400 to-blue-500 flex py-8 px-6 rounded-sm">
+  <Image
+    src={verifySetup}
+    alt="Verification"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+## Adding another linked account
+
+To link an additional Roblox account to your Discord account, run the `/verify add` command. The bot will then reply with a button
+linking to a game place. Join the game and you have successfully linked an additional Roblox account. You should look at the
+following section to learn about switching between accounts.
+
+<div className="bg-gradient-to-r from-green-400 to-blue-500 flex py-8 px-6 rounded-sm">
+  <Image
+    src={verifyAdd}
+    alt="Verify Add"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+## Setting a default account
+
+To set an additional linked account as your default account, run the `/verify default` command.
+
+**NOTE**: This will set the given account as your default account in all new servers and in any servers where you have not
+run `/verify switch` explicitly.
+
+<div className="bg-gradient-to-r from-green-400 to-blue-500 flex py-8 px-6 rounded-sm">
+  <Image
+    src={verifyDefault}
+    alt="Verify Add"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+## Switching accounts between servers
+
+To use an additional linked account in a server, run the `/verify switch` command and now, you have successfully switched your
+account for that server. You can now run `/update` to get your roles.
+
+<div className="bg-gradient-to-r from-green-400 to-blue-500 flex py-8 px-6 rounded-sm">
+  <Image
+    src={verifySwitch}
+    alt="Verify Add"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+## Unlinking an account
+
+To unlink an account, run the command `/verify delete`. You will now have successfully unlinked your Roblox account.
+
+<div className="bg-gradient-to-r from-green-400 to-blue-500 flex py-8 px-6 rounded-sm">
+  <Image
+    src={verifyDelete}
+    alt="Verify Add"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>

@@ -1,0 +1,137 @@
+import event_attendee from "../../../public/images/event_attendee.png";
+import event_host from "../../../public/images/event_host.png";
+import event_type_new from "../../../public/images/event_type_new.png";
+import event_type_modify from "../../../public/images/event_type_modify.png";
+import event_type_disable from "../../../public/images/event_type_disable.png";
+import event_type_enable from "../../../public/images/event_type_enable.png";
+import Image from "remix-image";
+import { Beta } from "../../components/Docs";
+
+{<div className="space-x-4 flex items-center">
+
+  <h1 className="inline-block">Events</h1>
+  <Beta />
+</div>}
+
+Events is a premium module that lets track any events that members of your server may host and log.
+
+## Logging an event
+
+To log an event, run the command `event new`. The bot will then prompt you to select an event type from the existing ones.
+Next, the bot will ask you to enter the Roblox usernames of the users who attended this event. After this, the event has been
+successfully logged.
+
+## Viewing Events
+
+### Viewing events attended by a member
+
+To see the list of events attended by a member, run the command `event attendee`. It has only one optional argument `username`.
+This argument can be used the events attended by another member and it stands for the Roblox username.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_attendee}
+    alt="Event Attendee"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+### Viewing events hosted by a member
+
+To see the list of events hosted by a member, run the command `event hosted`. It has only one optional argument `username`.
+This argument can be used the events hosted by another member and it stands for the Roblox username.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_host}
+    alt="Event Host"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+## Event Types
+
+### Creating a new Event Type
+
+To create a new event type, run the command `event type new`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_type_new}
+    alt="Event Type New"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has two required arguments.
+
+- **Event Id**: The user-defined id of the event type
+- **Event Name**: The user-defined name of the event type
+
+### Modifying an Event Type
+
+As of now, you can only modify the name of an Event Type.
+
+#### Modifying the Name
+
+To modify the name of an Event Type, run the command `/event type modify`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_type_modify}
+    alt="Event Type Modify"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+It has two required arguments.
+
+- **Event Id**: The id of the Event Type to modify
+- **Event Name**: The new name of the Event Type
+
+### Deleting an Event Type
+
+Currently, you cannot delete an event type. This may change in the future.
+
+### Toggling an Event Type
+
+The Events subsystem also contains functionality to enable or disable an Event Type.
+
+#### Disabling an Event Type
+
+To disable an event type, run the command `/event type disable`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_type_disable}
+    alt="Event Type Disable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+#### Enabling an Event Type
+
+To enable an event type, run the command `/event type enable`.
+
+<div className="bg-gradient-to-r from-blue-400 to-pink-500 flex py-2 md:py-4 xl:py-8 px-1 md:px-4 xl:px-6 rounded-sm">
+  <Image
+    src={event_type_enable}
+    alt="Event Type Enable"
+    className="rounded-md shadow-xl"
+    placeholder="blur"
+  />
+</div>
+
+### Viewing Event Types
+
+To view all Event Types in a server, run the command `/event type view`.
+
+## Resetting the Event Subsystem
+
+To reset the entire Event Subsystem, run the command `/event reset`. This will delete all logged events as well as remove all
+event types.
