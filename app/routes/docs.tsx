@@ -1,4 +1,5 @@
-import { Link, LinksFunction, Outlet } from "remix";
+import { Link, Outlet } from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/cloudflare";
 import Image from "remix-image";
 import { useState, Fragment } from "react";
 import { Dialog, Transition } from "@headlessui/react";

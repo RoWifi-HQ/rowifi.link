@@ -19,19 +19,19 @@ export default function Footer() {
             <span>Product</span>
             <nav className="mt-4 space-y-2 flex flex-col">
               <Link to="/#features">
-                <a className="text-sm text-gray-300 hover:text-link-dark">
+                <span className="text-sm text-gray-300 hover:text-link-dark">
                   Features
-                </a>
+                </span>
               </Link>
               <Link to="/invite">
-                <a className="text-sm text-gray-300 hover:text-link-dark">
+                <span className="text-sm text-gray-300 hover:text-link-dark">
                   Invite the Bot
-                </a>
+                </span>
               </Link>
               <Link to="/docs">
-                <a className="text-sm text-gray-300 hover:text-link-dark">
+                <span className="text-sm text-gray-300 hover:text-link-dark">
                   Docs
-                </a>
+                </span>
               </Link>
               <a
                 href="https://patreon.com/rowifi"
